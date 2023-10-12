@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Otros elementos del head -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="pruebas.css" />
+  </head>
+  <body>
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <div class="input-container">
+        <input type="text" id="nombre" name="nombre" />
+        <i class="fas fa-pencil-alt"></i>
+        <!-- Ícono de lápiz -->
+      </div>
+    </div>
+
+    <!------------- Select para mostrar información ------->
+    <h2>select para mostrar información</h2>
+    <select id="info-select" disabled>
+      <option value="opcion1">Opción 1</option>
+      <option value="opcion2">Opción 2</option>
+      <option value="opcion3">Opción 3</option>
+    </select>
+
+    <!-- Input de solo lectura para mostrar información -->
+    <input
+      type="text"
+      id="info-input"
+      readonly
+      value="Información de solo lectura"
+    />
+
+    <!----------------- Botón para habilitar la edición ------------->
+    <button id="edit-button">Editar</button>
+
+    <!-- -----------Opciones para retiro de cinturon--------- -->
+
+    <div class="option-container">
+      <label>
+        <input type="radio" name="retiro-cinturon" value="si" />
+        <span class="radio-button"></span>
+        Sí
+      </label>
+      <label>
+        <input
+          type="radio"
+          name="retiro-cinturon"
+          value="no"
+          checked="checked"
+        />
+        <span class="radio-button"></span>
+        No
+      </label>
+    </div>
+    <!-- -----------------ejemplo 2 de botones radio------------------ -->
+
+    <div class="radio-container">
+      <input type="radio" name="option" id="option-1" value="option1" />
+      <label for="option-1">Opción 1</label>
+
+      <input type="radio" name="option" id="option-2" value="option2" />
+      <label for="option-2">Opción 2</label>
+    </div>
+
+    <h1>Styling Radio & Checkbox Input Fields</h1>
+
+    <h2>Create custom styles for inputs with CSS only</h2>
+
+    <form>
+      <div class="content">
+        <fieldset>
+          <legend class="radio">Radio</legend>
+          <div class="container">
+            <ul>
+              <li>
+                <input type="radio" id="radio1" name="radio01" />
+                <label for="radio1">Empty</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="radio2"
+                  name="radio01"
+                  checked="checked"
+                />
+                <label for="radio2">Checked</label>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  id="radio3"
+                  name="radio02"
+                  disabled="disabled"
+                />
+                <label for="radio3">Empty Disabled</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="radio4"
+                  name="radio02"
+                  disabled="disabled"
+                  checked="checked"
+                />
+                <label for="radio4">Checked Disabled</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="content">
+        <fieldset>
+          <legend>Checkbox</legend>
+          <div class="container">
+            <ul>
+              <li>
+                <input type="checkbox" id="checkbox1" name="checkbox01" />
+                <label for="checkbox1">Empty</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="checkbox2"
+                  name="checkbox01"
+                  checked="checked"
+                />
+                <label for="checkbox2">Checked</label>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  id="checkbox3"
+                  name="checkbox02"
+                  disabled="disabled"
+                />
+                <label for="checkbox3">Disabled</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="checkbox4"
+                  name="checkbox02"
+                  disabled="disabled"
+                  checked="checked"
+                />
+                <label for="checkbox4">Checked Disabled</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+      </div>
+    </form>
+  </body>
+</html>

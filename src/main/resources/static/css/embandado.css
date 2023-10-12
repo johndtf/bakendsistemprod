@@ -1,0 +1,17 @@
+.time-size {
+  width: 30rem;
+  margin-bottom: 10px;
+}
+.time-size input[type="text"] {
+  width: 20rem;
+}
+
+@media (max-width: 768px) {
+  .time-size {
+    width: 25rem;
+  }
+
+  .time-size input[type="text"] {
+    width: 15rem;
+  }
+}

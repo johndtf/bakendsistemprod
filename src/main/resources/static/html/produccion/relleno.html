@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/produccion.css" />
+    <link rel="stylesheet" href="../../css/relleno.css" />
+    <title>Relleno</title>
+  </head>
+  <body>
+    <header>
+      <h1>Relleno</h1>
+    </header>
+    <div class="sidebar">
+      <div class="logo">
+        <img src="../../img/rueda.png" alt="llanta" />
+        <span class="span-logo">Subprocesos</span>
+      </div>
+      <ul class="menu">
+        <li class="completed">
+          <a href="#" aria-label="Inspección Inicial">
+            <i class="fas fa-search"></i>
+            <span class="description">Inspección Inicial</span>
+          </a>
+        </li>
+        <li class="completed">
+          <a href="#" aria-label="Raspado">
+            <i class="fa-solid fa-fan"></i>
+            <span class="description">Raspado</span>
+          </a>
+        </li>
+        <li class="completed">
+          <a href="#" aria-label="Preparación">
+            <i class="fa-solid fa-person-digging"></i>
+            <span class="description">Preparación</span>
+          </a>
+        </li>
+        <li class="completed">
+          <a href="#" aria-label="Reparación">
+            <i class="fas fa-tools"></i>
+            <span class="description">Reparación</span>
+          </a>
+        </li>
+        <li class="current">
+          <a href="#" aria-label="Relleno">
+            <i class="fas fa-fill"></i>
+            <span class="description">Relleno</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Corte de banda">
+            <i class="fas fa-cut"></i>
+            <span class="description">Corte de banda</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Embandado">
+            <i class="fas fa-toolbox"></i>
+            <!-- <img src="../../img/embandado.png" alt="" /> -->
+            <span class="description">Embandado</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Vulcanización">
+            <i class="fas fa-fire"></i>
+            <span class="description">Vulcanización</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Inspección Final">
+            <i class="fas fa-search"></i>
+            <span class="description">Inspección Final</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Terminación">
+            <i class="fas fa-flag-checkered"></i>
+            <span class="description">Terminación</span>
+          </a>
+        </li>
+
+        <!-- Otros elementos del menú -->
+      </ul>
+      <div class="toggle-description">
+        <i class="fas fa-info-circle"></i>
+        <span class="span-toggle">Ocultar Descripción</span>
+      </div>
+    </div>
+
+    <!-- Contenido principal  -->
+    <div class="content">
+      <section class="grid-section">
+        <div class="form-group item">
+          <label for="orden">Orden:</label>
+          <input type="text" id="orden" name="orden" value="8879" readonly />
+        </div>
+
+        <div class="form-group item double-size">
+          <label for="cliente">Cliente:</label>
+          <input
+            type="text"
+            id="cliente"
+            name="cliente"
+            value="NOMBRE1 NOMBRE2 APELLIDOEJEMPLO1 APELLIDO EJEMPLO2"
+            readonly
+          />
+        </div>
+
+        <div class="form-group item">
+          <label for="marca">Marca:</label>
+          <input
+            type="text"
+            id="marca"
+            name="marca"
+            value="MICHELIN"
+            readonly
+          />
+        </div>
+
+        <div class="form-group item">
+          <label for="dimension">Dimensión:</label>
+          <input
+            type="text"
+            id="dimension"
+            name="dimension"
+            value="295/80R22.5"
+            readonly
+          />
+        </div>
+
+        <div class="form-group item">
+          <label for="diseno">Diseño:</label>
+          <input type="text" id="diseno" name="diseno" value="VZE2" readonly />
+        </div>
+
+        <div class="form-group item">
+          <label for="serie">Serie:</label>
+          <input type="text" id="serie" name="serie" value="0420" readonly />
+        </div>
+
+        <div class="form-group item">
+          <label for="estadol">Estado:</label>
+          <input
+            type="text"
+            id="estadol"
+            name="estadol"
+            value="APTA"
+            readonly
+          />
+        </div>
+      </section>
+      <!-- ----------------------------sección 2-------------------------- -->
+      <section class="flex-container-wrap">
+        <div class="form-group item large-size time-size">
+          <label for="preparacion">Preparación:</label>
+          <input
+            type="text"
+            id="preparacion"
+            name="preparacion"
+            value="02/08/2023 9:52 a.m."
+            readonly
+          />
+        </div>
+
+        <div class="form-group item large-size time-size">
+          <label for="reparacion">Reparación:</label>
+          <input
+            type="text"
+            id="reparacion"
+            name="reparacion"
+            value="02/08/2023 10:22 a.m."
+            readonly
+          />
+        </div>
+
+        <div class="form-group item large-size time-size">
+          <label for="now">Actual:</label>
+          <input
+            type="text"
+            id="now"
+            name="now"
+            value="02/08/2023 11:23 a.m."
+            readonly
+          />
+        </div>
+
+        <div class="form-group item large-size time-size">
+          <label for="diff">Diferencia:</label>
+          <input
+            type="text"
+            id="diff"
+            name="diff"
+            value="61 minutos"
+            readonly
+          />
+        </div>
+      </section>
+      <!-- ------------------------------sección 3-------------------------- -->
+      <div class="flex-container-wrap">
+        <div class="flex-container-wrap">
+          <section class="grid-section">
+            <div class="form-group item large-size">
+              <label for="tiquete">Tiquete:</label>
+              <input type="text" id="tiquete" name="tiquete" value="19879" />
+            </div>
+          </section>
+
+          <section class="button-group">
+            <button class="rellenar-llanta-btn primary-button">
+              Actualizar Relleno
+            </button>
+          </section>
+        </div>
+
+        <!-- -------------------------------sección 4 --------------------------->
+        <div class="form-container2x1">
+          <section class="grid-section">
+            <div class="form-group item large-size">
+              <label for="codinsp">Cod. Insp:</label>
+              <select id="codinsp" name="codinsp">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+            <div class="form-group item double-large-size">
+              <!-- <label for="reencauches">Nivel Reenc.:</label> -->
+              <input
+                type="text"
+                id="resolinspect"
+                name="resolinspect"
+                value="RODADA A BAJA PRESIÓN"
+              />
+            </div>
+          </section>
+          <section class="button-group">
+            <button class="rechazo-preparacion-btn danger-button">
+              Rechazar llanta
+            </button>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="../../js/relleno.js"></script> -->
+    <script
+      src="https://kit.fontawesome.com/f3b6c3464d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

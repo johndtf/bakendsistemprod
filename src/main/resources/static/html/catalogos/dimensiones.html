@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dimensiones</title>
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/produccion.css" />
+    <link rel="stylesheet" href="../../css/catalogos.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dimensiones</h1>
+    </header>
+
+    <form class="form">
+      <h2>Actualizar Dimensiones</h2>
+      <div class="form-group">
+        <label for="brandName">Dimensión:</label>
+        <input
+          type="text"
+          id="dimensionName"
+          name="dimensionName"
+          value="295/80R22.5"
+          required
+          readonly
+        />
+      </div>
+      <!-- Input para almacenar de manera invisible el id de la dimensión -->
+      <input type="hidden" id="dimension-id" name="dimension-id" />
+
+      <div class="button-group">
+        <button
+          type="button"
+          class="primary-button short-button"
+          id="newDimension-btn"
+        >
+          Agregar
+        </button>
+        <button
+          type="button"
+          class="primary-button short-button"
+          id="modifyDimension-btn"
+        >
+          Modificar
+        </button>
+        <button
+          type="button"
+          class="primary-button short-button"
+          id="findDimension-btn"
+        >
+          Buscar
+        </button>
+        <button
+          type="button"
+          class="primary-button short-button"
+          id="cancelDimension-btn"
+        >
+          Cancelar
+        </button>
+      </div>
+
+      <a href="http://localhost:8080/dimensiones/">Listado de Dimensiones</a>
+      <!-- Div para mensajes de error -->
+      <div id="error-message" style="color: red"></div>
+      <!-- Div para resultados de busqueda -->
+      <div id="search-results" style="display: none"></div>
+    </form>
+    <script src="../../js/dimensiones.js"></script>
+  </body>
+</html>
